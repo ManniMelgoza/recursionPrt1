@@ -9,11 +9,19 @@ sumArray([1, 2, 3]); //  6
 sumArray([0, 1, -3]); //  -2
 sumArray([1, 2, 3, 4, 5]); // 15
 ***********************************************************************/
-
+debugger
 function sumArray(arr) {
-  // Your code here 
-}
-  
+  // Your code here
+
+  if (arr.length < 1) return 0;
+
+    return arr.pop() + sumArray(arr)
+};
+
+console.log(sumArray([1, 2, 3])); //  6
+console.log(sumArray([0, 1, -3])); //  -2
+console.log(sumArray([1, 2, 3, 4, 5])); // 15
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumArray;

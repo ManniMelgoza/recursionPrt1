@@ -13,7 +13,19 @@ sumToN(-8)  // returns null
 
 
 function sumToN(n) {
-  // Your code here 
+  // Your code here
+  let arrNum = [];
+
+  if (n < 0){
+    return null;
+  }
+
+  if (arrNum.length < n) {
+    arrNum.push(n)
+  }
+
+
+
 }
 
 
